@@ -6,9 +6,13 @@
 //
 
 import UIKit
-
+import WebKit
 class CharityViewController: UIViewController {
 
+    @IBOutlet weak var webView: WKWebView!
+    
+    @IBOutlet weak var charitySelectionTextField: UITextField!
+   
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
