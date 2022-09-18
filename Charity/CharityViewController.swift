@@ -73,7 +73,8 @@ extension CharityViewController: UITableViewDelegate {
             }
             
         }
-       
+        tableView.isHidden = true
+  
     }
 }
 extension CharityViewController: UITableViewDataSource {
