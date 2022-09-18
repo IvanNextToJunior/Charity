@@ -19,6 +19,9 @@
 		3C9C405628D3AA0D00037DFA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C9C405428D3AA0D00037DFA /* Main.storyboard */; };
 		3C9C405828D3AA1800037DFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C9C405728D3AA1800037DFA /* Assets.xcassets */; };
 		3C9C405B28D3AA1800037DFA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C9C405928D3AA1800037DFA /* LaunchScreen.storyboard */; };
+		3CA1361628D730B8003831F9 /* FundTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA1361428D730B8003831F9 /* FundTableViewCell.swift */; };
+		3CA1361728D730B8003831F9 /* FundTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CA1361528D730B8003831F9 /* FundTableViewCell.xib */; };
+		3CA1361928D74514003831F9 /* CharityModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA1361828D74513003831F9 /* CharityModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +41,9 @@
 		3C9C405728D3AA1800037DFA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3C9C405A28D3AA1800037DFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3C9C405C28D3AA1800037DFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3CA1361428D730B8003831F9 /* FundTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FundTableViewCell.swift; sourceTree = "<group>"; };
+		3CA1361528D730B8003831F9 /* FundTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FundTableViewCell.xib; sourceTree = "<group>"; };
+		3CA1361828D74513003831F9 /* CharityModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharityModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +88,9 @@
 				3C9C403428D3856700037DFA /* AppDelegate.swift */,
 				3C9C403628D3856700037DFA /* SceneDelegate.swift */,
 				3C9C403828D3856700037DFA /* CharityViewController.swift */,
+				3CA1361828D74513003831F9 /* CharityModel.swift */,
+				3CA1361428D730B8003831F9 /* FundTableViewCell.swift */,
+				3CA1361528D730B8003831F9 /* FundTableViewCell.xib */,
 				3C9C403A28D3856700037DFA /* Main.storyboard */,
 				3C9C403D28D3857100037DFA /* Assets.xcassets */,
 				3C9C403F28D3857100037DFA /* LaunchScreen.storyboard */,
@@ -185,6 +194,7 @@
 			files = (
 				3C9C404128D3857100037DFA /* LaunchScreen.storyboard in Resources */,
 				3C9C403E28D3857100037DFA /* Assets.xcassets in Resources */,
+				3CA1361728D730B8003831F9 /* FundTableViewCell.xib in Resources */,
 				3C9C403C28D3856700037DFA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -208,6 +218,8 @@
 			files = (
 				3C9C403928D3856700037DFA /* CharityViewController.swift in Sources */,
 				3C9C403528D3856700037DFA /* AppDelegate.swift in Sources */,
+				3CA1361628D730B8003831F9 /* FundTableViewCell.swift in Sources */,
+				3CA1361928D74514003831F9 /* CharityModel.swift in Sources */,
 				3C9C403728D3856700037DFA /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

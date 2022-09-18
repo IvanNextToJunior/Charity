@@ -9,15 +9,83 @@ import UIKit
 import WebKit
 class CharityViewController: UIViewController {
 
-    @IBOutlet weak var webView: WKWebView!
+    @IBOutlet weak private var webView: WKWebView!
     
-    @IBOutlet weak var charitySelectionTextField: UITextField!
+    @IBOutlet weak private var charitySelectionTextField: UITextField!
    
+    @IBOutlet weak private var fundSelectionButton: UIButton!
+    @IBOutlet weak private var tableView: UITableView!
+    
+    @IBAction private func selectCharityTouchUpInside(_ sender: UIButton) {
+        if sender.isSelected {
+            tableView.isHidden = false
+        }
+      
+        sender.isSelected.toggle()
+    }
+  
+    private let model = CharityModel()
+    private let identifier = "cell"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        fundSelectionButton.setTitle("⌄", for: .normal)
+       tableView.isHidden = true
+        setup()
+       
+      
+  
     }
-
+   
+    private func setup() {
+       
+        let nib = UINib(nibName: "FundTableViewCell", bundle: nil)
+      
+        tableView.register(nib, forCellReuseIdentifier: identifier)
+        tableView.dataSource = self
+        tableView.delegate = self
+    }
 
 }
 
+extension CharityViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+       
+        tableView.deselectRow(at: indexPath, animated: false)
+        
+        let dict = model.fundDict
+       
+        guard let cell = tableView.cellForRow(at: indexPath) as? FundTableViewCell else {return}
+        
+        for (key, value) in dict {
+            
+            if key == cell.fundLabel.text && cell.isSelected {
+               
+                charitySelectionTextField.text = key
+                charitySelectionTextField.resignFirstResponder()
+        
+                
+                guard let url = URL(string: value) else {return}
+                let request = URLRequest(url: url)
+                webView.load(request)
+            }
+            
+        }
+       
+    }
+}
+extension CharityViewController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return model.fundNames.count
+    }
+   
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+  
+       let cell = tableView.dequeueReusableCell(withIdentifier: identifier, for: indexPath) as! FundTableViewCell
+       
+        cell.fundLabel.text = model.fundNames[indexPath.row]
+       
+       return cell
+    }
+    
+}
