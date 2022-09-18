@@ -20,7 +20,9 @@ class CharityViewController: UIViewController {
         if sender.isSelected {
             tableView.isHidden = false
         }
-      
+        else {
+            tableView.isHidden = true
+        }
         sender.isSelected.toggle()
     }
   
