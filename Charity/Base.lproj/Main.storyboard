@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KYo-Bt-hZp">
-                                <rect key="frame" x="20" y="44" width="374" height="288"/>
+                                <rect key="frame" x="20" y="44" width="374" height="292"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <wkWebViewConfiguration key="configuration">
                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
@@ -25,22 +25,22 @@
                                 </wkWebViewConfiguration>
                             </wkWebView>
                             <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="s2g-DS-mpd">
-                                <rect key="frame" x="0.0" y="420" width="339" height="56"/>
+                                <rect key="frame" x="0.0" y="424" width="339" height="48"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="uvF-2J-13n">
-                                <rect key="frame" x="0.0" y="484" width="414" height="412"/>
+                                <rect key="frame" x="0.0" y="480" width="414" height="416"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Для того, чтобы перейти к списку благотворительных организаций, нажмите на кнопку" textAlignment="natural" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="none" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xv3-1g-Yok">
-                                <rect key="frame" x="0.0" y="340" width="414" height="72"/>
+                                <rect key="frame" x="0.0" y="344" width="414" height="72"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="clip" translatesAutoresizingMaskIntoConstraints="NO" id="KuE-Tw-B2G">
-                                <rect key="frame" x="347" y="420" width="67" height="60"/>
+                                <rect key="frame" x="347" y="416" width="67" height="60"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Button">
@@ -66,11 +66,11 @@
                             <constraint firstItem="s2g-DS-mpd" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="aDS-2j-8mg"/>
                             <constraint firstItem="s2g-DS-mpd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ecP-7L-Ez6"/>
                             <constraint firstAttribute="trailing" secondItem="KuE-Tw-B2G" secondAttribute="trailing" id="iu0-1R-wJL"/>
-                            <constraint firstItem="KuE-Tw-B2G" firstAttribute="top" secondItem="xv3-1g-Yok" secondAttribute="bottom" constant="8" symbolic="YES" id="kjM-G1-YEr"/>
+                            <constraint firstItem="KuE-Tw-B2G" firstAttribute="top" secondItem="xv3-1g-Yok" secondAttribute="bottom" id="kjM-G1-YEr"/>
                             <constraint firstAttribute="bottom" secondItem="uvF-2J-13n" secondAttribute="bottom" id="lKA-x0-mAP"/>
                             <constraint firstItem="KYo-Bt-hZp" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="nvb-ie-npr"/>
                             <constraint firstItem="uvF-2J-13n" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="sYj-oz-4Lg"/>
-                            <constraint firstItem="KuE-Tw-B2G" firstAttribute="leading" secondItem="s2g-DS-mpd" secondAttribute="trailing" constant="2" id="u5O-MJ-FkJ"/>
+                            <constraint firstItem="KuE-Tw-B2G" firstAttribute="leading" secondItem="s2g-DS-mpd" secondAttribute="trailing" id="u5O-MJ-FkJ"/>
                             <constraint firstAttribute="trailingMargin" secondItem="KYo-Bt-hZp" secondAttribute="trailing" id="z4p-FT-UoN"/>
                         </constraints>
                     </view>
