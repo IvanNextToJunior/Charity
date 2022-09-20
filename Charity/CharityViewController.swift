@@ -18,10 +18,10 @@ class CharityViewController: UIViewController {
     
     @IBAction private func selectCharityTouchUpInside(_ sender: UIButton) {
         if sender.isSelected {
-            tableView.isHidden = false
+            tableView.isHidden = true
         }
         else {
-            tableView.isHidden = true
+            tableView.isHidden = false
         }
         sender.isSelected.toggle()
     }
