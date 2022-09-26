@@ -74,32 +74,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KYo-Bt-hZp">
-                                <rect key="frame" x="20" y="88" width="374" height="248"/>
-                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <wkWebViewConfiguration key="configuration">
-                                    <dataDetectorTypes key="dataDetectorTypes"/>
-                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
-                                    <wkPreferences key="preferences"/>
-                                </wkWebViewConfiguration>
-                            </wkWebView>
                             <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="s2g-DS-mpd">
-                                <rect key="frame" x="0.0" y="424" width="339" height="48"/>
+                                <rect key="frame" x="0.0" y="555" width="339" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="uvF-2J-13n">
-                                <rect key="frame" x="0.0" y="480" width="414" height="416"/>
+                                <rect key="frame" x="0.0" y="597" width="414" height="299"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="414" id="rgb-z4-UAo"/>
+                                    <constraint firstAttribute="height" constant="299" id="sPy-g0-cSP"/>
+                                </constraints>
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Для того, чтобы перейти к списку благотворительных организаций, нажмите на кнопку" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="none" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xv3-1g-Yok">
-                                <rect key="frame" x="0.0" y="344" width="414" height="72"/>
+                                <rect key="frame" x="0.0" y="461" width="414" height="72"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="clip" translatesAutoresizingMaskIntoConstraints="NO" id="KuE-Tw-B2G">
-                                <rect key="frame" x="347" y="416" width="67" height="60"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="clip" translatesAutoresizingMaskIntoConstraints="NO" id="KuE-Tw-B2G">
+                                <rect key="frame" x="347" y="542" width="67" height="60"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Button">
@@ -109,28 +104,33 @@
                                     <action selector="selectCharityTouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rhe-Yy-CdF"/>
                                 </connections>
                             </button>
+                            <wkWebView contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KYo-Bt-hZp">
+                                <rect key="frame" x="0.0" y="119" width="415" height="318"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <dataDetectorTypes key="dataDetectorTypes" none="YES"/>
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="xv3-1g-Yok" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="1Ej-zh-Qw7"/>
-                            <constraint firstItem="KYo-Bt-hZp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="1wr-fj-WVw"/>
+                            <constraint firstItem="uvF-2J-13n" firstAttribute="top" secondItem="s2g-DS-mpd" secondAttribute="bottom" constant="8" id="5MU-tt-k3T"/>
                             <constraint firstItem="xv3-1g-Yok" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="BF7-rd-TA0"/>
                             <constraint firstItem="uvF-2J-13n" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="E93-hL-pS3"/>
-                            <constraint firstItem="xv3-1g-Yok" firstAttribute="top" secondItem="KYo-Bt-hZp" secondAttribute="bottom" constant="8" symbolic="YES" id="ID8-da-INq"/>
                             <constraint firstItem="uvF-2J-13n" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Oa6-Pv-To6"/>
-                            <constraint firstItem="s2g-DS-mpd" firstAttribute="top" secondItem="xv3-1g-Yok" secondAttribute="bottom" constant="8" symbolic="YES" id="Rmf-Hu-vRt"/>
-                            <constraint firstItem="uvF-2J-13n" firstAttribute="top" secondItem="s2g-DS-mpd" secondAttribute="bottom" constant="8" id="TEB-EA-XbT"/>
+                            <constraint firstItem="s2g-DS-mpd" firstAttribute="top" secondItem="xv3-1g-Yok" secondAttribute="bottom" constant="22" id="PqO-Bd-3lh"/>
                             <constraint firstItem="uvF-2J-13n" firstAttribute="top" secondItem="KuE-Tw-B2G" secondAttribute="bottom" constant="4" id="UvV-vX-y6g"/>
-                            <constraint firstItem="s2g-DS-mpd" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="aDS-2j-8mg"/>
                             <constraint firstItem="s2g-DS-mpd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ecP-7L-Ez6"/>
                             <constraint firstAttribute="trailing" secondItem="KuE-Tw-B2G" secondAttribute="trailing" id="iu0-1R-wJL"/>
+                            <constraint firstItem="xv3-1g-Yok" firstAttribute="top" secondItem="KYo-Bt-hZp" secondAttribute="bottom" constant="24" id="jhk-yx-3OV"/>
                             <constraint firstItem="KuE-Tw-B2G" firstAttribute="top" secondItem="xv3-1g-Yok" secondAttribute="bottom" id="kjM-G1-YEr"/>
                             <constraint firstAttribute="bottom" secondItem="uvF-2J-13n" secondAttribute="bottom" id="lKA-x0-mAP"/>
-                            <constraint firstItem="KYo-Bt-hZp" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="nvb-ie-npr"/>
                             <constraint firstItem="uvF-2J-13n" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="sYj-oz-4Lg"/>
                             <constraint firstItem="KuE-Tw-B2G" firstAttribute="leading" secondItem="s2g-DS-mpd" secondAttribute="trailing" id="u5O-MJ-FkJ"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="KYo-Bt-hZp" secondAttribute="trailing" id="z4p-FT-UoN"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="gq5-OH-9U4"/>
