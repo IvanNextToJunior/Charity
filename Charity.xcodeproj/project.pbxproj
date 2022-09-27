@@ -26,6 +26,7 @@
 		3CA1361E28DC9A35003831F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C9C403A28D3856700037DFA /* Main.storyboard */; };
 		3CA1361F28DC9A85003831F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C9C403A28D3856700037DFA /* Main.storyboard */; };
 		3CA1362028DD95E4003831F9 /* MainServices.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C9C405428D3AA0D00037DFA /* MainServices.storyboard */; };
+		3CA1362228E1E08E003831F9 /* Funds.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3CA1362128E1E08D003831F9 /* Funds.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +50,7 @@
 		3CA1361528D730B8003831F9 /* FundTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FundTableViewCell.xib; sourceTree = "<group>"; };
 		3CA1361828D74513003831F9 /* CharityModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharityModel.swift; sourceTree = "<group>"; };
 		3CA1361A28DC7706003831F9 /* ChoiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoiceViewController.swift; sourceTree = "<group>"; };
+		3CA1362128E1E08D003831F9 /* Funds.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Funds.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 				3C9C403D28D3857100037DFA /* Assets.xcassets */,
 				3C9C403F28D3857100037DFA /* LaunchScreen.storyboard */,
 				3C9C404228D3857100037DFA /* Info.plist */,
+				3CA1362128E1E08D003831F9 /* Funds.plist */,
 			);
 			path = Charity;
 			sourceTree = "<group>";
@@ -201,6 +204,7 @@
 				3CA1362028DD95E4003831F9 /* MainServices.storyboard in Resources */,
 				3C9C404128D3857100037DFA /* LaunchScreen.storyboard in Resources */,
 				3C9C403E28D3857100037DFA /* Assets.xcassets in Resources */,
+				3CA1362228E1E08E003831F9 /* Funds.plist in Resources */,
 				3CA1361728D730B8003831F9 /* FundTableViewCell.xib in Resources */,
 				3CA1361E28DC9A35003831F9 /* Main.storyboard in Resources */,
 			);

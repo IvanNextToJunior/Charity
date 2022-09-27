@@ -34,10 +34,23 @@ class CharityViewController: UIViewController {
         super.viewDidLoad()
         fundSelectionButton.setTitle("⌄", for: .normal)
        tableView.isHidden = true
+        setupModel()
         setup()
        
       
   
+    }
+    
+   private func setupModel() {
+       guard let path = Bundle.main.path(forResource: "Funds", ofType: ".plist"),
+            let plistDictionary = NSDictionary(contentsOfFile: path),
+       let array = plistDictionary.object(forKey: "Fund Name") as? [String],
+             let dict = plistDictionary.object(forKey: "Funds") as? [String: String]
+       else {
+           return
+       }
+       model.fundNames = array
+       model.fundDict = dict
     }
    
     private func setup() {

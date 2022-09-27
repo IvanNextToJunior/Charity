@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Fund Name</key>
+	<array>
+		<string>Нужна помощь</string>
+		<string>Ночлежка</string>
+		<string>Арифметика добра</string>
+		<string>Фонд продовольствия &quot;Русь&quot;</string>
+		<string>Созидание</string>
+		<string>Перспектива</string>
+		<string>Дети ждут</string>
+		<string>Живи сейчас</string>
+		<string>Ника</string>
+		<string>Мои друзья</string>
+	</array>
+	<key>Funds</key>
+	<dict>
+		<key>Нужна помощь</key>
+		<string>https://nuzhnapomosh.ru/donate/</string>
+		<key>Ночлежка</key>
+		<string>https://moscow.homeless.ru</string>
+		<key>Арифметика добра</key>
+		<string>https://www.a-dobra.ru</string>
+		<key>Фонд продовольствия &quot;Русь&quot;</key>
+		<string>https://foodbankrus.ru</string>
+		<key>Созидание</key>
+		<string>https://bf-sozidanie.ru/</string>
+		<key>Перспектива</key>
+		<string>https://perspektivy.ru</string>
+		<key>Дети ждут</key>
+		<string>https://дети-ждут.рф</string>
+		<key>Живи сейчас</key>
+		<string>https://alsfund.ru</string>
+		<key>Ника</key>
+		<string>https://fond-nika.ru</string>
+		<key>Мои друзья</key>
+		<string>https://my-friends.ru</string>
+	</dict>
+</dict>
+</plist>
