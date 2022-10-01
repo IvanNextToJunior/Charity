@@ -36,6 +36,7 @@ class CharityViewController: UIViewController {
        tableView.isHidden = true
       
         //https://swiftbook.ru/post/tutorials/property-list/
+        //Further reading: https://serialcoder.dev/text-tutorials/swift-tutorials/working-with-property-lists-in-swift-part-one/
         setupModel()
         setup()
        
